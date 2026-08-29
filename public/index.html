@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Football Player Value Predictor</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <div class="football">
+            ⚽
+        </div>
+
+        <h1>
+            Football Player Value Predictor
+        </h1>
+
+        <p class="subtitle">
+            AI-powered football player market value estimation
+        </p>
+
+    </div>
+
+
+
+    <!-- INPUT CARD -->
+
+    <div class="card">
+
+
+        <div class="form-grid">
+
+
+            <!-- Overall -->
+
+            <div class="input-group">
+
+                <label>
+                    Overall Rating
+                </label>
+
+                <input
+                    id="overall"
+                    type="number"
+                    min="1"
+                    max="99"
+                    value="85"
+                >
+
+            </div>
+
+
+
+            <!-- Potential -->
+
+            <div class="input-group">
+
+                <label>
+                    Potential
+                </label>
+
+                <input
+                    id="potential"
+                    type="number"
+                    min="1"
+                    max="99"
+                    value="90"
+                >
+
+            </div>
+
+
+
+            <!-- Age -->
+
+            <div class="input-group">
+
+                <label>
+                    Age
+                </label>
+
+                <input
+                    id="age"
+                    type="number"
+                    min="15"
+                    max="50"
+                    value="22"
+                >
+
+            </div>
+
+
+
+            <!-- International Reputation -->
+
+            <div class="input-group">
+
+                <label>
+                    International Reputation
+                </label>
+
+                <input
+                    id="international_reputation"
+                    type="number"
+                    min="1"
+                    max="5"
+                    value="3"
+                >
+
+            </div>
+
+
+
+            <!-- Pace -->
+
+            <div class="input-group">
+
+                <label>
+                    Pace
+                </label>
+
+                <input
+                    id="pace"
+                    type="number"
+                    min="1"
+                    max="99"
+                    value="90"
+                >
+
+            </div>
+
+
+
+            <!-- Shooting -->
+
+            <div class="input-group">
+
+                <label>
+                    Shooting
+                </label>
+
+                <input
+                    id="shooting"
+                    type="number"
+                    min="1"
+                    max="99"
+                    value="85"
+                >
+
+            </div>
+
+
+
+            <!-- Passing -->
+
+            <div class="input-group">
+
+                <label>
+                    Passing
+                </label>
+
+                <input
+                    id="passing"
+                    type="number"
+                    min="1"
+                    max="99"
+                    value="82"
+                >
+
+            </div>
+
+
+
+            <!-- Dribbling -->
+
+            <div class="input-group">
+
+                <label>
+                    Dribbling
+                </label>
+
+                <input
+                    id="dribbling"
+                    type="number"
+                    min="1"
+                    max="99"
+                    value="88"
+                >
+
+            </div>
+
+
+
+            <!-- Physic -->
+
+            <div class="input-group">
+
+                <label>
+                    Physical
+                </label>
+
+                <input
+                    id="physic"
+                    type="number"
+                    min="1"
+                    max="99"
+                    value="70"
+                >
+
+            </div>
+
+
+
+            <!-- Skill Moves -->
+
+            <div class="input-group">
+
+                <label>
+                    Skill Moves
+                </label>
+
+                <input
+                    id="skill_moves"
+                    type="number"
+                    min="1"
+                    max="5"
+                    value="4"
+                >
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- BUTTON -->
+
+        <button
+            class="predict-btn"
+            onclick="predictValue()">
+
+            ⚡ Predict Market Value
+
+        </button>
+
+
+    </div>
+
+
+
+    <!-- RESULT -->
+
+    <div class="result">
+
+        <h2>
+            Predicted Market Value
+        </h2>
+
+        <div id="prediction">
+            —
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+
+        Football Player Value Prediction & Analytics System
+        <br>
+        Powered by Machine Learning
+
+    </div>
+
+
+</div>
+
+
+<script src="/script.js"></script>
+
+</body>
+
+</html>
